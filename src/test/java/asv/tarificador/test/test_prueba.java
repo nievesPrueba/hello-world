@@ -16,39 +16,38 @@ import static org.testng.Assert.*;
 
 
 public class test_prueba {
-	private String baseUrl;
-	  private WebDriver driver;
-	  private ScreenshotHelper screenshotHelper;
+//	private String baseUrl;
+	private WebDriver driver;
+	private ScreenshotHelper screenshotHelper;
 	  
-	  @BeforeTest
-	  public void openBrowser() {
-//	    baseUrl = System.getProperty("https://www.google.com");
+	@BeforeTest
+	public void openBrowser() {
+//		baseUrl = System.getProperty("https://www.google.es");
 	    driver = new ChromeDriver();
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.get("https://www.google.es");
 	    screenshotHelper = new ScreenshotHelper();
-	  }
+	}
 	  
-	  @AfterTest
-	  public void saveScreenshotAndCloseBrowser() throws IOException {
-	    screenshotHelper.saveScreenshot("screenshot.png");
-	    driver.quit();
-	  }
+	@AfterTest
+	public void saveScreenshotAndCloseBrowser() throws IOException {
+		screenshotHelper.saveScreenshot("screenshot.png");
+		driver.quit();
+	}
 	  
-	  @Test
-	  public void pageTitleAfterSearchShouldBeginWithDrupal() throws IOException {
-	    assertEquals("The page title should equal Google at the start of the test.", "Google", driver.getTitle());
+	@Test
+	public void pageTitleAfterSearchShouldBeginWithDrupal() throws IOException {
+		assertEquals("Google", driver.getTitle(), "The page title should equal Google at the start of the test.");
 	    WebElement searchField = driver.findElement(By.name("q"));
 	    searchField.sendKeys("Drupal!");
 	    searchField.submit();
-	  }
+	}
 	  
-	  private class ScreenshotHelper {
-	  
-	    public void saveScreenshot(String screenshotFileName) throws IOException {
-	      File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	      FileUtils.copyFile(screenshot, new File(screenshotFileName));
-	    }
-	  }
-	  
+	private class ScreenshotHelper {
+		
+		public void saveScreenshot(String screenshotFileName) throws IOException {
+			File screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(screenshot, new File(screenshotFileName));
+		}
+	}  
 }
