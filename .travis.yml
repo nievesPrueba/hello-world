@@ -1,6 +1,6 @@
 # Configuration file. This file indicates what tasks we want to execute in our CI process.
 language: java
-#jdk:
-# - jdk1.8
+jdk:
+ - jdk1.8.0_45
 # uncomment and edit the following line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
