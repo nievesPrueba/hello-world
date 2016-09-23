@@ -46,24 +46,24 @@
 				</configuration>
 			</plugin>
 			
-			<plugin>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<configuration>
-					<descriptors>
-						<descriptor>src/main/assembly/shade.xml</descriptor>
-						<descriptor>src/main/assembly/delivery-test.xml</descriptor>
-					</descriptors>
-				</configuration>
-				<executions>
-					<execution>
-						<id>make-assembly</id> 
-						<phase>package</phase> 
-						<goals>
-							<goal>single</goal>
-						</goals>
-					</execution>
-				</executions>				
-			</plugin>
+<!-- 			<plugin> -->
+<!-- 				<artifactId>maven-assembly-plugin</artifactId> -->
+<!-- 				<configuration> -->
+<!-- 					<descriptors> -->
+<!-- 						<descriptor>src/main/assembly/shade.xml</descriptor> -->
+<!-- 						<descriptor>src/main/assembly/delivery-test.xml</descriptor> -->
+<!-- 					</descriptors> -->
+<!-- 				</configuration> -->
+<!-- 				<executions> -->
+<!-- 					<execution> -->
+<!-- 						<id>make-assembly</id>  -->
+<!-- 						<phase>package</phase>  -->
+<!-- 						<goals> -->
+<!-- 							<goal>single</goal> -->
+<!-- 						</goals> -->
+<!-- 					</execution> -->
+<!-- 				</executions>				 -->
+<!-- 			</plugin> -->
 			
 	        <plugin>
 	            <groupId>org.apache.maven.plugins</groupId>
@@ -101,7 +101,7 @@
 		<groupId>org.testng</groupId>
 		<artifactId>testng</artifactId>
 		<version>6.8.5</version>
-      	<scope>test</scope>	
+      	<scope>compile</scope>	
       	<exclusions>
       		<exclusion>
    				<groupId>junit</groupId>
