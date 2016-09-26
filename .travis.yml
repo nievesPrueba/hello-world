@@ -6,8 +6,8 @@ jdk:
 before_deploy:
   -"mvn clean install -U -DskipTests=true"
 # Show the jwt token, as we aint afraid of no leakage
-before_install:
-  - export | grep SAUCE_
+#before_install:
+#  - export | grep SAUCE_
 #script:
 #-"mvn archetype:generate -DgroupId=com.saucelabs -DartifactId=sauce-project -Dversion=1.0.0-SNAPSHOT -DinteractiveMode=false -DarchetypeRepository=http://repository-saucelabs.forge.cloudbees.com/release -DarchetypeGroupId=com.saucelabs -DarchetypeArtifactId=quickstart-webdriver-testng -DarchetypeVersion=2.1.11 -DsauceUserName=nievesPrueba -DsauceAccessKey=35ce4bda-7ef0-4244-b1ac-539b13308d3b"
 #env:
