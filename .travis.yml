@@ -3,8 +3,8 @@ jdk:
   - oraclejdk8
   #- oraclejdk7
 
-before_deploy:
-  -"mvn clean install -U -DskipTests=true"
+#before_deploy:
+#  -"mvn clean install -U -DskipTests=true"
 # Show the jwt token, as we aint afraid of no leakage
 #before_install:
 #  - export | grep SAUCE_
@@ -15,7 +15,7 @@ before_deploy:
 #    - SAUCE_USERNAME=nievesPrueba
 addons:
   sauce_connect: true
-    #username: "nievesPrueba"
-    #access_key: "35ce4bda-7ef0-4244-b1ac-539b13308d3b"
+    username: "nievesPrueba"
+    access_key: "35ce4bda-7ef0-4244-b1ac-539b13308d3b"
     #username: "Your Sauce Labs access key"
     #access_key: "Your Sauce Labs access key"
