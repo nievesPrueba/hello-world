@@ -1,0 +1,5 @@
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@deb6432
+WebDriverRemoteWebDriver: internet explorer on WINDOWS (766123d1c082428fb92293359355acee)
+WebDriverRemoteWebDriver: safari on MAC (f3099668235e4275a21a0c2f2d9679fc)
+SauceOnDemandSessionID=766123d1c082428fb92293359355acee job-name=webDriver
+SauceOnDemandSessionID=f3099668235e4275a21a0c2f2d9679fc job-name=webDriver
