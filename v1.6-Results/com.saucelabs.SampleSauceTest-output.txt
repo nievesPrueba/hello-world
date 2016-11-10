@@ -1,0 +1,5 @@
+Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNGMapConfigurator@1b4fb997
+username: travis-arq-testing1
+accessKey: 0c5a2380-863d-45c7-b6d0-2c55d6d93ba1
+WebDriverRemoteWebDriver: firefox on XP (45b8de8f80834b4da7e8c6a5c70463a0)
+SauceOnDemandSessionID=45b8de8f80834b4da7e8c6a5c70463a0 job-name=webDriver
