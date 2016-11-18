@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="testing-gce-2b039ba3-45ee-40c3-a89b-e5fe83f51b02" name="com.saucelabs.SampleSauceTest" tests="1" failures="1" timestamp="18 Nov 2016 10:55:34 GMT" time="10.018" errors="0">
+  <testcase name="webDriver" time="9.38" classname="com.saucelabs.SampleSauceTest">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;Portal Clientes Grupo ASV Servicios Funerarios&amp;gt; but was:&amp;lt;&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<Portal Clientes Grupo ASV Servicios Funerarios> but was:<>
+	at com.saucelabs.SampleSauceTest.webDriver(SampleSauceTest.java:123)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+... Removed 14 stack frames]]>
+    </failure>
+  </testcase>
+</testsuite>

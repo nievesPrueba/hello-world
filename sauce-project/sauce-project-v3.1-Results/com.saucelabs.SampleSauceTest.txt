@@ -1,0 +1,13 @@
+-------------------------------------------------------------------------------
+Test set: com.saucelabs.SampleSauceTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.334 sec <<< FAILURE!
+webDriver(com.saucelabs.SampleSauceTest)  Time elapsed: 9.945 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<Portal Clientes Grupo ASV Servicios Funerarios> but was:<>
+	at org.testng.Assert.fail(Assert.java:89)
+	at org.testng.Assert.failNotEquals(Assert.java:489)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:171)
+	at org.testng.Assert.assertEquals(Assert.java:181)
+	at com.saucelabs.SampleSauceTest.webDriver(SampleSauceTest.java:123)
+
